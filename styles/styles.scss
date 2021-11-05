@@ -62,13 +62,16 @@ body {
             padding: 30px 30px 15px;
             display: flex;
             flex-direction: column;
-            a {
+            .btn-link {
                 margin-bottom: 20px;
-                text-decoration: none;
-                color: rgba($color: #ffffff, $alpha: .8);
+                color: $paleBlue;
+                background-color: transparent;
+                border: none;
+                text-align: start;
+                cursor: pointer;
             }
             :last-child {
-                color: rgba($color: #ffffff, $alpha: .3);
+                color: rgba($color:$paleBlue, $alpha: .3);
             }
         }
     }
@@ -109,7 +112,7 @@ body {
             }
         }
         :hover {
-            background-color: $blue;
+            background-color: $desaturatedBlue;
             cursor: pointer;
             border-radius: 15px;
         }

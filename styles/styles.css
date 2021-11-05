@@ -49,13 +49,16 @@ body {
   display: flex;
   flex-direction: column;
 }
-.container .card-info-footer a {
+.container .card-info-footer .btn-link {
   margin-bottom: 20px;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: #bdc1ff;
+  background-color: transparent;
+  border: none;
+  text-align: start;
+  cursor: pointer;
 }
 .container .card-info-footer :last-child {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(189, 193, 255, 0.3);
 }
 .container .card {
   border-radius: 15px;
@@ -95,7 +98,7 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 .container .card :hover {
-  background-color: #5847eb;
+  background-color: #6f76c8;
   cursor: pointer;
   border-radius: 15px;
 }
