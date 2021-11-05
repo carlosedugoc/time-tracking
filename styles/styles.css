@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  color: white;
+  background-color: #0f1424;
+  display: flex;
+  height: 100vh;
+  place-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(auto, 200px);
+  gap: 20px;
+}
+.container .card-info {
+  background-color: #1c1f4a;
+  grid-row: 1/3;
+  border-radius: 15px;
+}
+.container .card-info-body {
+  background-color: #5847eb;
+  padding: 20px 0 20px 30px;
+  border-radius: 15px;
+}
+.container .card-info-body img {
+  height: 60px;
+  width: 60px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.container .card-info-body .info small {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 0;
+}
+.container .card-info-body .info p {
+  font-size: 44px;
+  font-weight: 300;
+  margin-top: 0;
+}
+.container .card-info-footer {
+  padding: 30px 30px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.container .card-info-footer a {
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+.container .card-info-footer :last-child {
+  color: rgba(255, 255, 255, 0.3);
+}
+.container .card {
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.container .card-body {
+  background-color: #1c1f4a;
+  border-radius: 15px;
+  height: 87%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.container .card-body-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px 5px 20px;
+}
+.container .card-body-header img {
+  height: 5px;
+  width: auto;
+  align-self: center;
+}
+.container .card-body-content {
+  padding: 10px 15px 0 20px;
+}
+.container .card-body-content p {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0;
+}
+.container .card-body-content small {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.container .card :hover {
+  background-color: #5847eb;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.container .card-img {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  margin-right: 15px;
+  margin-top: -4px;
+}
+
+.pink {
+  background-color: #ff8c66;
+}
+
+.softBlue {
+  background-color: #56c2e6;
+}
+
+.lightRed {
+  background-color: #ff5c7c;
+}
+
+.limeGreen {
+  background-color: #4acf81;
+}
+
+.violet {
+  background-color: #7536d3;
+}
+
+.softOrange {
+  background-color: #f1c65b;
+}
+
+@media (max-width: 375px) {
+  body {
+    display: block;
+    overflow: scroll;
+  }
+
+  .container {
+    grid-template-columns: repeat(1, auto);
+    padding: 20px 10px;
+  }
+  .container .card-info-body {
+    display: flex;
+    align-content: center;
+    padding: 20px 0 0px 30px;
+  }
+  .container .card-info-body img {
+    align-self: center;
+  }
+  .container .card-info-body .info {
+    margin-left: 20px;
+  }
+  .container .card-info-body .info small {
+    font-size: 10px;
+  }
+  .container .card-info-body .info p {
+    font-size: 24px;
+  }
+  .container .card-info-footer {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 30px 0 30px;
+  }
+  .container .card {
+    height: 150px;
+  }
+  .container .card-body {
+    height: 82%;
+  }
+  .container .card-body-header {
+    padding-bottom: 0;
+  }
+  .container .card-body-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+  }
+  .container .card-body-content p {
+    font-size: 36px;
+  }
+  .container .card-img {
+    height: 45px;
+    width: 45px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
